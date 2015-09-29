@@ -37,37 +37,6 @@ fn primes() -> Prime {
     Prime { curr: 1 }
 }
 
-/*
-fn highest_prime_divisor(num: u64) -> u64 {
-    let mut highest:u64 = 0;
-    for i in 2..(num/2 + 1) {
-        if (num % i == 0) && is_prime(i) {
-            println!("highest so far: {}", i);
-            highest = i;
-        }
-    }
-    
-    return highest;    
-}
-
-fn main() {
-    let num:u64 = 600851475143;
-    let top_bound = num / 2 + 1;
-    let mut highest:u64 = 0;
-    
-    //for i in primes().take_while(|&x| x <= (num / 2)) {
-    for i in 2..top_bound{
-        if i % 1000000000 == 0 {
-            println!("at: {}", i);
-        }
-        if (num % i == 0) && is_prime(i) {
-            println!("highest so far: {}", i);
-            highest = i;
-        }
-    }
-    println!("{}", highest);
-}
-*/
 fn main() {
     let mut num:u64 = 600851475143;
     let mut highest_prime_factor = 0;
