@@ -1,0 +1,52 @@
+[package]
+
+name = "eulerinrust"
+version = "0.1.0"
+
+[[bin]]
+name = "ex1"
+path = "src/ex1.rs"
+
+[[bin]]
+name = "ex2"
+path = "src/ex2.rs"
+
+[[bin]]
+name = "ex3"
+path = "src/ex3.rs"
+
+[[bin]]
+name = "ex4"
+path = "src/ex4.rs"
+
+[[bin]]
+name = "ex5"
+path = "src/ex5.rs"
+
+[[bin]]
+name = "ex6"
+path = "src/ex6.rs"
+
+[[bin]]
+name = "ex7"
+path = "src/ex7.rs"
+
+[[bin]]
+name = "ex8"
+path = "src/ex8.rs"
+
+[[bin]]
+name = "ex9"
+path = "src/ex9.rs"
+
+[[bin]]
+name = "ex10"
+path = "src/ex10.rs"
+
+[[bin]]
+name = "ex11"
+path = "src/ex11.rs"
+
+[[bin]]
+name = "ex12"
+path = "src/ex12.rs"
