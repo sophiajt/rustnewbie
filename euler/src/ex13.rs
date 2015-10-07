@@ -1,4 +1,4 @@
-//Note: seems like crate isn't ready and possibly deprecated
+//Note: seems like bignum crate isn't ready and possibly deprecated
 
 fn main() {
     let bignums = [ "37107287533902102798797998220837590246510135740250",

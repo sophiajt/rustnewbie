@@ -54,3 +54,7 @@ path = "src/ex12.rs"
 [[bin]]
 name = "ex13"
 path = "src/ex13.rs"
+
+[[bin]]
+name = "ex14"
+path = "src/ex14.rs"
