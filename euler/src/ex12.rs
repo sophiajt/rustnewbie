@@ -35,7 +35,7 @@ fn main() {
     let mut num = 0u64;
     
     // Cache the primes we'll be using
-    let mut first_primes: Vec<u64> = primes().take(1000).collect();
+    let first_primes: Vec<u64> = primes().take(1000).collect();
     
     for i in 1..1000000u64 {
         num += i;
@@ -43,8 +43,8 @@ fn main() {
         let mut num_div = 1u64;
         
         let mut num_tmp = num;
-        for x in &mut first_primes {
-            let prime = *x;
+        for &x in &first_primes {
+            let prime = x;
             if (num % prime) == 0 {
                 let mut exponent = 1;
 
