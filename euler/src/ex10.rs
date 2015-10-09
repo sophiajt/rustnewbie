@@ -5,6 +5,7 @@ fn main() {
     slots[0] = false;
     slots[1] = false;
     
+    // We calculate the primes using a simple stride and marking off multiples 
     for stride in 2..(SIZE/2) {
         let mut pos = stride;
         while pos < (SIZE - stride) {

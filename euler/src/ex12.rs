@@ -15,7 +15,6 @@ impl Iterator for Prime {
     type Item = u64;
 
     fn next(&mut self) -> Option<u64> {
-        //let new_next = self.curr + self.next;
         let mut new_next = self.curr + 1;
         while !is_prime(new_next) {
             new_next += 1;

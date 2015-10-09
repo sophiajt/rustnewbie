@@ -33,6 +33,11 @@ fn main() {
     
     println!("Compositional:");
     
+    //Compositional looks nicer but maybe a little too fancy
+    //Map our collatz, then zip against the numbers to give us back our indicies
+    //Max will use the first number, the collatz, in our tuple pair, so pulling this out
+    //will give us a tuple of the highest collatz and its index.  After that, we unwrap 
+    //and grab the index
     let max = (1..1000001).map(collatz).zip(1..1000001).max().unwrap().1;
 
     println!("{}", max);

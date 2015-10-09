@@ -103,10 +103,13 @@ fn main() {
                     "53503534226472524250874054075591789781264330331690" ];
     let mut carry = 0;
     
+    //Convert the above list of strings into a vector of digit values we can use
+    //We go ahead and reverse the digits to make them easier to add 
     let rev_digits: Vec<Vec<u8>> = bignums.iter().map(|x| x.bytes().rev().map(|y| y - 48).collect()).collect();
     
     let mut output_digits: Vec<u8> = Vec::new();
     
+    //Add each group of digits and carry the extra forward
     for col in 0..50 {
         let mut total: u64 = 0;
         for row in 0..100 {
@@ -123,11 +126,13 @@ fn main() {
         output_digits.push((total - carry * 10) as u8);
     }
     
+    //Flatten all our carries into separate digits
     while carry > 0 {
         output_digits.push((carry % 10) as u8);
         carry /= 10;
     }
     
+    //Once we have all the digits, just reverse and take what we need
     for i in output_digits.iter().rev().take(10) {
         print!("{}", i);
     }
